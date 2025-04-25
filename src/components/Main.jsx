@@ -30,7 +30,7 @@ function Main() {
                         <button className={ styles.emailBtn } onClick={copyEmail}>Copy Emailㅤ<span class="material-symbols-outlined">content_copy</span></button>
                     </div>
                 </div>
-                <img src="./src/components/img/photo1.png" alt='developer' className={styles.img}/>
+                <img src="/img/photo1.png" alt='developer' className={styles.img}/>
             </div>
         </div>
     )
