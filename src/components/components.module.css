@@ -70,11 +70,12 @@
 }
 
 .Main_content {
-    padding: 0 40px 40px 40px;
+    padding: 0 40px 0 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    overflow: visible;
 }
 
 .Main_text {
@@ -116,7 +117,7 @@
 }
 
 .img {
-    height: 260px;
+    height: 280px;
     transform: scaleX(-1);
 }
 
@@ -278,4 +279,39 @@
 
 .contact_link:hover {
     color:#7821E6;
+}
+
+@keyframes slideFadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header_main_animated {
+    animation: slideFadeDown 1s ease-out forwards;
+}
+
+.Content_animated {
+    animation: slideFadeUp 1s ease-out forwards;
+}
+
+.footer_animated {
+    animation: slideFadeUp 1s ease-out forwards;
+    opacity: 0;
 }

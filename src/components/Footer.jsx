@@ -1,9 +1,37 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import styles from './components.module.css'
 
 function Footer() {
+    const footerRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        if (footerRef.current) {
+            observer.observe(footerRef.current);
+        }
+
+        return () => {
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+            if (footerRef.current) observer.unobserve(footerRef.current);
+        };
+    }, []);
+
     return (
-        <div className={styles.Footer} id='footer'>
+        <div
+            className={`${styles.Footer} ${isVisible ? styles.footer_animated : ''}`}
+            id='footer'
+            ref={footerRef}
+        >
             <div className={styles.Footer_container}>
                 <h2 style={{margin:0, fontWeight:'normal', color:'#C0C0C0', marginLeft:40}}>Located in Chernivtsi, UA</h2>
                 <ul style={{margin:0, listStyle:'none', padding:0}} className={styles.socials}>

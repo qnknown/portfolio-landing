@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './components.module.css'
 
 function Content() {
+    const [animate, setAnimate] = useState(false);
+    
+    useEffect(() => {
+        setAnimate(true);
+    }, []);
+
     return (
-        <div className={styles.Content}>
+        <div className={`${styles.Content} ${animate ? styles.Content_animated : ''}`}>
             <div className={styles.First}>
                 <div className={styles.experience}>
                     <h2 className={styles.h2}> • Experience</h2>
