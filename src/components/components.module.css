@@ -271,6 +271,7 @@
 
 .contact_link {
     text-decoration: none;
+    color: white;
 }
 
 .contact_link:visited {
