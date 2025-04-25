@@ -309,6 +309,7 @@
 
 .Content_animated {
     animation: slideFadeUp 1s ease-out forwards;
+    opacity: 0;
 }
 
 .footer_animated {

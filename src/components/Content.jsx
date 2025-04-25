@@ -12,14 +12,14 @@ function Content() {
         <div className={`${styles.Content} ${animate ? styles.Content_animated : ''}`}>
             <div className={styles.First}>
                 <div className={styles.experience}>
-                    <h2 className={styles.h2}> • Experience</h2>
+                    <h2 style={{margin:0}}>Experience</h2>
                     <h2 style={{color: '#7821E6', fontWeight:'normal'}}>University practicum</h2>
                     <p className={styles.Content_text}>Developed a web application for managing sessions on Telegram.<br></br>
                     Technologies used: Python (backend), React + Next.js (frontend)</p>
                     <p style={{color: '#C0C0C0', fontSize:'18px', margin:0}}>2024</p>
                 </div>
                 <div className={styles.education}>
-                    <h2 className={styles.h2}> • Education</h2>
+                <h2 style={{margin:0}}>Education</h2>
                     <h2 style={{color: '#7821E6', fontWeight:'normal'}}>Yurii Fedkovych 
                     Chernivtsi National University</h2>
                     <p className={styles.Content_text}>Software engineering bachelor’s degree</p>
@@ -27,14 +27,14 @@ function Content() {
 
                 </div>
                 <div className={styles.languages}>
-                    <h2 className={styles.h2}> • Languages</h2>
-                    <ul style={{margin:0}}>
+                <h2 style={{margin:0}}>Languages</h2>
+                    <ul style={{margin:0, marginTop:20}}>
                         <li style={{fontSize:18}}>Ukrainian <b>C2</b></li>
                         <li style={{fontSize:18}}>English <b>B2+</b></li>
                     </ul>
                 </div>
                 <div className={styles.courses}>
-                    <h2 className={styles.h2}> • Courses</h2>
+                <h2 style={{margin:0}}>Courses</h2>
 
                     <h2 style={{color: '#7821E6', fontWeight:'normal'}}>WEB Programming (php)</h2>
                     <p className={styles.Content_text}>IABS Academy</p>
