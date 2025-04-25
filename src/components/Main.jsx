@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './components.module.css'
 
 function Main() {
+
+    
     const copyEmail = () => {
         const email = "taras6514@gmail.com";
         navigator.clipboard.writeText(email)
@@ -28,7 +30,7 @@ function Main() {
                         <button className={ styles.emailBtn } onClick={copyEmail}>Copy Emailㅤ<span class="material-symbols-outlined">content_copy</span></button>
                     </div>
                 </div>
-                <img src="src\components\photo1.png" alt='developer' className={styles.img}/>
+                <img src="src/components/img/photo1.png" alt='developer' className={styles.img}/>
             </div>
         </div>
     )
