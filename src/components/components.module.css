@@ -108,6 +108,7 @@
     height: 40px;
     margin-right: 10px;
     box-shadow: -2px 2px 27px #7821E6;
+    color: white;
 }
 
 .hireBtn:hover {
@@ -339,10 +340,28 @@
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
     .header_main,
-    .Main {
-        width: 100%;
+    .Main,
+    .First,
+    .Second,
+    .skills_Main,
+    .skills,
+    .softsSkills,
+    .Footer,
+    .Footer_container {
+        width: 100% !important;
+        max-width: 100%;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .header_main {
         flex-direction: column;
+        height: auto;
         padding: 10px;
     }
 
@@ -353,57 +372,80 @@
     }
 
     .header_list_item {
-        margin: 0;
+        margin: 5px 0;
         font-size: 18px;
     }
 
     .Main_top {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
-        gap: 20px;
+        gap: 10px;
     }
 
     .Main_content {
         flex-direction: column;
+        justify-content: center;
         gap: 20px;
-        padding: 20px;
-        align-items: flex-start;
-    }
-
-    .Main_text {
-        max-width: 100%;
-        font-size: 18px;
     }
 
     .img {
         display: none;
     }
 
+    .Main_text {
+        max-width: 100%;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .hireBtn,
+    .emailBtn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
     .Content {
         flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
     }
 
     .First,
     .Second {
         width: 100%;
+        padding: 0px 0px;
+    }
+
+    .First > *,
+    .Second > *,
+    .softsSkills {
+        padding: 40px;
+    }
+
+    .skillsWrapper_Main {
+        padding: 1px;
+    }
+
+    .skill_list {
+        flex-direction: column;
+        padding: 0;
     }
 
     .skill_list > * {
         width: 100%;
-        margin-right: 0 !important;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .Footer {
+        height: 100%;
     }
 
     .Footer_container {
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        justify-content: center;
         align-items: center;
-    }
-
-    .socials {
-        justify-content: center;
+        text-align: center;
+        gap: 10px;
     }
 
     .location {
@@ -411,6 +453,17 @@
     }
 
     .available_footer {
-        margin: 0px;
+        margin: 0;
     }
+
+    .socials {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header_list > :first-child {
+        display: none;
+    }
+
 }
+
