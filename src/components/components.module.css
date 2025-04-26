@@ -216,7 +216,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0 50px 0;
+    padding: 30px 0 30px 0;
     margin: 0;
     font-weight: normal;
 }
@@ -353,12 +353,10 @@
         padding: 10px;
     }
 
-    .header_main,
     .Main,
     .First,
     .Second,
     .skills_Main,
-    .skills,
     .softsSkills,
     .Footer,
     .Footer_container {
@@ -369,9 +367,11 @@
     }
 
     .header_main {
+        width: 100% !important;
+        max-width: 100%;
         flex-direction: column;
         height: auto;
-        padding: 10px;
+
     }
 
     .header_list {
@@ -423,19 +423,33 @@
         padding: 40px;
     }
 
+    .skills_Main {
+        padding: 30px 0;
+    }
+
     .skillsWrapper_Main {
         padding: 1px;
     }
 
+    .skillsWrapper {
+        width: 50px;
+    }
+
     .skill_list {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         padding: 0;
     }
 
     .skill_list > * {
-        width: 100%;
+        width: 48%;
         margin: 0;
         margin-bottom: 20px;
+    }
+
+    .skill_list > *:nth-child(odd) {
+        margin-right: 0;
     }
 
     .Footer {
@@ -466,6 +480,11 @@
 
     .header_list > :first-child {
         display: none;
+    }
+
+    .hireBtn,
+    .emailBtn {
+        width: 100%;
     }
 
 }
