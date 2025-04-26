@@ -1,0 +1,231 @@
+:root {
+    --bg_color: #0F0F0F;
+}
+
+body {
+    padding: 0 150px;
+    overflow-x: hidden;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav_ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.nav_item {
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav_item:hover {
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hireBtn {
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hireBtn:hover {
+    color: var(--bg_color);
+    border: 1px solid var(--bg_color);
+    background-color: white;
+    scale: 0.98;
+}
+
+.Welcome_main {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.Welcome_bot {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.dev_h1 {
+    font-size: 100px;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.regular_p {
+    font-size: 20px;
+}
+
+.scrollBtn {
+    background: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.scrollBtn:hover {
+    color: var(--bg_color);
+    border: 1px solid var(--bg_color);
+    background-color: white;
+    scale: 0.98;
+}
+
+.Skills_top {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skill {
+    width: 420px;
+}
+
+.h2 {
+    font-size: 36px;
+}
+
+.h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.light_p {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.Skills_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.scroller {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroller_text {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-fill-color: var(--bg_color);
+    -webkit-text-stroke: 0.5px white;
+}
+
+.About_Container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.About_column {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    gap: 20px;
+}
+
+.About_column > * {
+    background-color: #17171725;
+    border-radius: 40px;
+    border: 1px solid #222222;
+    padding: 10px 40px;
+}
+
+.Hobbies {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Hobbies_text {
+    padding: 20px 50px 20px 40px;
+}
+
+.Hobbies_img {
+    height: 277px;
+    margin: 0;
+    transform: scaleX(-1);
+    margin-top: 40px;
+}
+
+.Interested {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.Footer {
+    margin-top: 40px;
+    height: 100px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
