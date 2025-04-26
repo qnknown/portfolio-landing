@@ -13,14 +13,14 @@ function Content() {
             <div className={styles.First}>
                 <div className={styles.experience}>
                     <h2 style={{margin:0}}>Experience</h2>
-                    <h2 style={{color: '#7821E6', fontWeight:'normal'}}>University practicum</h2>
+                    <h2 className={styles.h2_secondary}>University practicum</h2>
                     <p className={styles.Content_text}>Developed a web application for managing sessions on Telegram.<br></br>
                     Technologies used: Python (backend), React + Next.js (frontend)</p>
                     <p style={{color: '#C0C0C0', fontSize:'18px', margin:0}}>2024</p>
                 </div>
                 <div className={styles.education}>
                 <h2 style={{margin:0}}>Education</h2>
-                    <h2 style={{color: '#7821E6', fontWeight:'normal'}}>Yurii Fedkovych 
+                    <h2 className={styles.h2_secondary}>Yurii Fedkovych 
                     Chernivtsi National University</h2>
                     <p className={styles.Content_text}>Software engineering bachelor’s degree</p>
                     <p style={{color: '#C0C0C0', fontSize:'18px', margin:0}}>2022-2026 (Still studying)</p>
@@ -36,11 +36,11 @@ function Content() {
                 <div className={styles.courses}>
                 <h2 style={{margin:0}}>Courses</h2>
 
-                    <h2 style={{color: '#7821E6', fontWeight:'normal'}}>WEB Programming (php)</h2>
+                    <h2 className={styles.h2_secondary}>WEB Programming (php)</h2>
                     <p className={styles.Content_text}>IABS Academy</p>
                     <p style={{color: '#C0C0C0', fontSize:'18px', margin:0}}>2019</p>
 
-                    <h2 style={{color: '#7821E6', fontWeight:'normal'}}>Marketing of IT products</h2>
+                    <h2 className={styles.h2_secondary}>Marketing of IT products</h2>
                     <p className={styles.Content_text}>Genesis</p>
                     <p style={{color: '#C0C0C0', fontSize:'18px', margin:0}}>2024</p>
 
@@ -65,7 +65,7 @@ function Content() {
                     <li className={styles.skillsWrapper}><h2 className={styles.skills} style={{background: 'linear-gradient(191deg,rgba(27, 27, 27, 1) 80%, rgba(118, 33, 230, 0.018) 100%)'}}>React.js basics</h2></li>      
                 </ul>
                 <div className={styles.softsSkills}>
-                    <h2 style={{color: '#7821E6', fontWeight:'normal', margin:0, textAlign:'left'}}>Personal skills</h2>
+                    <h2 className={styles.h2_secondary} style={{margin: 0}}>Personal skills</h2>
                     <ul style={{textAlign:'left', marginTop:15, marginBottom:0}}>
                         <li className={styles.Content_text}>Strong problem-solving and analytical skills</li>
                         <li className={styles.Content_text}>Flexibility and quick adaptation</li>
