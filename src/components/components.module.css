@@ -385,6 +385,7 @@
     .Main_content {
         flex-direction: column;
         justify-content: center;
+        text-align: left;
         gap: 20px;
     }
 
