@@ -343,7 +343,7 @@ body {
 
 @media (max-width: 480px) {
     .h1, .dev_h1 {
-        font-size: 36px;
+        font-size: 48px;
     }
 
     .h2 {
