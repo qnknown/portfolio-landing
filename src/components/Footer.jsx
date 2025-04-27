@@ -40,7 +40,7 @@ function Footer() {
     return (
         <>
             <Reveal>
-                <div className={styles.Footer} style={{margin:0}}>
+                <div className={styles.Footer} style={{margin:0, marginBottom:20}}>
                     <h3 className={styles.h3} style={{margin:0}}>Contact me</h3>
                     <nav className={styles.navigation}>
                                     <ul className={styles.nav_ul}>
