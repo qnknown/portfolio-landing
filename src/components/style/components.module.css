@@ -120,16 +120,6 @@ body {
     scale: 0.98;
 }
 
-.scrollBtn:focus,
-.scrollBtn:active {
-  color: white;
-}
-
-.hireBtn:focus,
-.hireBtn:active {
-  color: white;
-}
-
 .Skills_top {
     height: 100px;
     display: flex;
