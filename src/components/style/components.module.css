@@ -118,6 +118,18 @@ body {
     scale: 0.98;
 }
 
+.scrollBtn:focus,
+.scrollBtn:active {
+  background-color: inherit;
+  color: inherit;
+}
+
+.hireBtn:focus,
+.hireBtn:active {
+  background-color: inherit;
+  color: inherit;
+}
+
 .Skills_top {
     height: 100px;
     display: flex;
@@ -266,7 +278,7 @@ body {
     }
 
     .h1, .dev_h1 {
-        font-size: 60px;
+        font-size: 70px;
         line-height: 60px;
         text-align: left;
     }
@@ -294,7 +306,7 @@ body {
     }
 
     .scroller_text {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .About_Container {
