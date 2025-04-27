@@ -120,14 +120,12 @@ body {
 
 .scrollBtn:focus,
 .scrollBtn:active {
-  background-color: inherit;
-  color: inherit;
+  color: white;
 }
 
 .hireBtn:focus,
 .hireBtn:active {
-  background-color: inherit;
-  color: inherit;
+  color: white;
 }
 
 .Skills_top {
