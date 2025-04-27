@@ -3,6 +3,17 @@ import { motion } from 'framer-motion';
 import { FaTelegramPlane, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 function Modal({ onClose }) {
+    const copyEmail = () => {
+        const email = "taras6514@gmail.com";
+        navigator.clipboard.writeText(email)
+            .then(() => {
+                alert("Email copied to clipboard!");
+            })
+            .catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+    };
+
     return (
         <div className={styles.modalOverlay} onClick={onClose}>
             <motion.div 
@@ -16,10 +27,13 @@ function Modal({ onClose }) {
                 <h2>Interested in collaborating?</h2>
                 <p>All links:</p>
                 <div className={styles.iconRow}>
-                    <a href="https://t.me/yourTelegram" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/briddges" target="_blank" rel="noopener noreferrer">
                         <FaTelegramPlane size={30} />
                     </a>
-                    <a href="mailto:yourEmail@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <a href="" rel="noopener noreferrer" onClick={(e) => { 
+                        e.preventDefault(); 
+                        copyEmail(); 
+                    }}>
                         <FaEnvelope size={30} />
                     </a>
                     <a href="https://linkedin.com/in/yourLinkedIn" target="_blank" rel="noopener noreferrer">
