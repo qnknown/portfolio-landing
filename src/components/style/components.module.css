@@ -233,6 +233,7 @@ body {
 @media (max-width: 768px) {
     body {
         padding: 0 20px;
+        overflow-x: hidden;
     }
 
     .header {
@@ -270,7 +271,6 @@ body {
     .regular_p {
         font-size: 18px;
     }
-
 
     .Welcome_bot > *:nth-child(1) {
         display: none;
