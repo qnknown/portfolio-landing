@@ -4,6 +4,10 @@
 
 body {
     padding: 0 150px;
+}
+
+
+html, body {
     overflow-x: hidden;
 }
 
@@ -237,10 +241,6 @@ body {
         padding: 0 20px;
     }
 
-    html, body {
-        overflow-x: hidden;
-      }
-
     .header {
         flex-direction: column;
         align-items: center;
@@ -411,7 +411,6 @@ body {
     }
 
     .Footer {
-        flex-direction: column;
         gap: 20px;
         padding: 20px 0;
     }
