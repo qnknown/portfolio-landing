@@ -352,3 +352,67 @@ body {
         font-size: 36px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding: 0 50px;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .nav_ul {
+        gap: 30px;
+    }
+
+    .h1, .dev_h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .regular_p {
+        font-size: 18px;
+    }
+
+    .Skill {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .Skills_row {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .About_Container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .About_column {
+        width: 100%;
+    }
+
+    .Hobbies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Hobbies_text {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .Hobbies_img {
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .Footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+}
