@@ -57,7 +57,7 @@ const Slide = (props) => {
 const Phrase = () => {
   return (
     <div className={styles.scroller}>
-      <p className={styles.scroller_text} style={{lineHeight:0}}>JAVASRIPT TYPESRIPT NODE VUE REACT</p>
+      <p className={styles.scroller_text} style={{lineHeight:0}}>JAVASRIPT TYPESRIPT NODE VUE REACT&nbsp;</p>
     </div>
   )
 }
