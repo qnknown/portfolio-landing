@@ -236,6 +236,54 @@ html, body {
     position: relative;
 }
 
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* затемнение фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: #17171725;
+    border: 1px solid #222222;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.modalContent h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.modalContent p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.iconRow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconRow a {
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iconRow a:hover {
+    transform: scale(1.2);
+}
+
+
 @media (max-width: 768px) {
     body {
         padding: 0 20px;
