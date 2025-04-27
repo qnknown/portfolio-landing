@@ -46,7 +46,7 @@ function Footer() {
                                     <ul className={styles.nav_ul}>
                                         <li className={styles.nav_item}><a href="https://t.me/briddges" target="_blank" rel="noopener noreferrer" style={{color:"white", textDecoration:"none"}}>Telegram</a></li>
                                         <li className={styles.nav_item} onClick={copyEmail}>E-mail</li>
-                                        <li className={styles.nav_item} onClick={downloadCV}><a href="/CV.pdf" download="My_CV_Taras.pdf" style={{ color: "white", textDecoration: "none" }}>CV (PDF)</a></li>
+                                        <li className={styles.nav_item} onClick={downloadCV}><a href="/CV.pdf" download="CV_Taras.pdf" style={{ color: "white", textDecoration: "none" }}>CV (PDF)</a></li>
                                     </ul>
                                 </nav>
                     <motion.button className={styles.hireBtn} onClick={handleClick}>
