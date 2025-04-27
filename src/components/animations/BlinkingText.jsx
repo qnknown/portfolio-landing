@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import styles from '../style/components.module.css'
 
 export function BlinkingText() {
     return (

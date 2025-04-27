@@ -50,6 +50,7 @@ html, body {
 }
 
 .hireBtn {
+    font-family: "Cascadia Code", sans-serif;
     background: none;
     border: 1px solid white;
     border-radius: 20px;
