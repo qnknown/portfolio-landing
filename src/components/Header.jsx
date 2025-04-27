@@ -5,6 +5,11 @@ import { motion } from 'framer-motion';
 import { BlinkingText } from './animations/BlinkingText';
 
 function Header() {
+    const handleClick = (e) => {
+        e.target.blur(); // снимаем фокус
+        // тут твой код на клик
+      };
+
     return (
         <RevealTop>
             <div className={styles.header}>
@@ -22,7 +27,7 @@ function Header() {
                         </li>
                     </ul>
                 </nav>
-                <motion.button className={styles.hireBtn}>
+                <motion.button className={styles.hireBtn} onClick={handleClick}>
                     <BlinkingText />
                 </motion.button>
             </div>
