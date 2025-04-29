@@ -284,6 +284,72 @@ html, body {
     transform: scale(1.2);
 }
 
+.Projects_Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Project {
+    background-color: #17171725;
+    border: 1px solid #222222;
+    border-radius: 40px;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Project:hover {
+    scale: 1.01;
+    transition: 0.1s ease-out;
+}
+
+.Project_img {
+    display: block;
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carouselWrapper {
+    height: 410px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselBtn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    z-index: 3;
+}
+
 
 @media (max-width: 768px) {
     body {

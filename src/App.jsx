@@ -7,6 +7,7 @@ import AboutPage from './components/About';
 import Interested from './components/Interested';
 import Footer from './components/Footer';
 import Background from './components/animations/Background';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <SkillsPage />
       <ScrollingText />
       <AboutPage />
+      <Projects />
       <Interested />
       <Footer />
     </div>

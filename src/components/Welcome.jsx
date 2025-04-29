@@ -13,11 +13,6 @@ function WelcomePage() {
         });
     };
 
-    const handleClick = (e) => {
-        e.target.blur(); // снимаем фокус
-        // тут твой код на клик
-      };
-
     return (
         <div className={styles.Welcome}>
             <Header />
